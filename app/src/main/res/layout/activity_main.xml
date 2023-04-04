@@ -85,15 +85,14 @@
         app:layout_constraintStart_toEndOf="@+id/txtLongitude"
         app:layout_constraintTop_toBottomOf="@+id/txtValorLatitude" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ver no mapa"
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="386dp"
+        android:layout_height="306dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtValorLongitude"
-        app:layout_constraintVertical_bias="0.142"
-        tools:layout_editor_absoluteX="0dp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPinGPS" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
